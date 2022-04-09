@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body style="background-color:rgba(94, 172, 182, 0.295);">
+    <div id="main">
+       <p style="font-family:'Courier New'; font-size:20px; text-align: center;" >Welome to JULTR Email Verification</p>
+    </div>
+    
+   
+    <!--- login form --->
+    <div class="login" name="login" style="display:none;">
+      <p1 style="font-family:'Courier New'; font-size:15px;">Login Here</p1>
+      <br><br>
+      <form>
+        <label for="username" style="font-family:'Courier New';">Username:</label><br>
+        <input type="email" id="username" name="username" style="width: 97%;
+        color: rgb(0, 0, 0);
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.02);"><br>
+        <label for="pwd" style="font-family:'Courier New';">Password:</label><br>
+        <input type="password" id="pwd" name="pwd" style="width: 97%;
+        color: rgb(0, 0, 0);
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.02);"><br><br>
+        <button type="button" class="login_btn">Login</button>
+      </form>
+
+      <p style="font-family:'Courier New'; font-size:15px;">Verify an Email</p>
+      <label for ="hash" style="font-family:'Courier New';" >Enter decryption key:</label>
+      <input id="hash" type="text" style="
+      color: rgb(0, 0, 0);
+      border-radius: 5px;
+      border: 1px solid rgba(0, 0, 0, 0.02);"></input><br><br>
+      <button type="button" class = "search_db" >Decrypt</button>
+      <p><span style="font-family:'Courier New';"></span></p>
+    </div>
+
+    <div class="authenticated" style="display:none;">
+      <p>Logged in user: <span></span></p>
+      <p>Company: Apple</p>
+      <button type="button" class="logout_btn">Logout</button>
+    </div>
+
+    <script src="auth.js"></script>
+  </body>
+</html>
